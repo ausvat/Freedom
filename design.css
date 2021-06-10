@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #333333;
+    position: fixed;
+    z-index: 500;
+
+}
+
+nav {
+    
+    float:right;
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-weight: 200;
+    color: lightgrey;
+}
+
+nav a:hover {
+
+    color: white;
+
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+    border-radius: 5px;
+    
+}
+nav a:hover::before {
+    width: 100%;
+    
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 100px;
+    position: relative;
+    padding-top: 50px;
+    
+    
+}
+
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    
+    margin: 0px 200px 0px 0px;
+}
+
+a {text-decoration: none; color:lightgray}
+
+.container {
+    margin-bottom: 0px;
+    
+    
+
+}
+
+.backgroundimg {
+    background-color: rgb(77, 107, 153); 
+    width: 100%;
+    height: 200px;
+    -webkit-transition: background-color 2000ms ease-out;
+   -moz-transition: background-color 2000ms ease-out;
+   -o-transition: background-color 2000ms ease-out;
+   transition: background-color 2000ms ease-out;
+   
+}
+    
+    
+    
+   
+
+.backgroundimgall {
+    background-color: rgb(77, 107, 153); 
+    width: 100%;
+    height: 1000px;
+    
+    
+}
+
+
+.backgroundimg:hover {
+    background-color: #555555;
+    -webkit-transition: background-color 2000ms ease-out;
+   -moz-transition: background-color 2000ms ease-out;
+   -o-transition: background-color 2000ms ease-out;
+   transition: background-color 2000ms ease-out;
+}
+   
+    
+
+.imgresize {
+
+    width: 100%;
+    padding-top: 50px;
+    z-index: -1;
+    position: relative;
+}
+
+.textimg {
+    
+    position: absolute;
+    font-weight: 200;
+    font-size: 48px;
+    color: white;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    margin:450px 0px 0px 525px;
+    
+}
+
+.hope {
+    position: relative;
+}
+
+#abtus {
+     margin: 600px 0px 0px 650px;
+     padding: 10px 50px 10px 50px;
+     position: absolute;
+     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+     font-weight: 200;
+     border: 1px solid #333333;
+     background-color: #333333;
+     border-radius: 7px;
+     color: white;
+     background-image: -webkit-linear-gradient(45deg, #666666 50%, transparent 50%);
+     background-image: linear-gradient(45deg, #666666 50%, transparent 50%);
+     background-position: 100%;
+     background-size: 400%;
+     -webkit-transition: background 300ms ease-in;
+     transition: background 300ms ease-in;
+     cursor: pointer;
+ }
+
+ #abtus:hover {
+     background-position: 0;
+     border: 1px solid #666666;
+ }
+
+
+
+html {
+   scroll-behavior: smooth;
+}
+
+.scroll-container:nth-of-type(1) {
+background-color: #555555;
+}
+
+.scroll-container:nth-of-type(2) {
+background-color: rgb(77, 107, 153);
+}
+
+.scroll-container:nth-of-type(3) {
+background-color: rgb(77, 107, 153);
+}
+
+.scroll-container:nth-of-type(even) {
+flex-direction: row-reverse;
+}
+
+.scroll-element {
+min-height: 300px;
+height: 600px;
+background-color: rgb(77, 107, 153);
+width: 100%;
+
+
+}
+
+@media screen and (max-width: 650px) {
+.scroll-container,
+.scroll-container:nth-of-type(even) {
+flex-direction: column;
+align-content: inherit;
+}
+
+
+}
+
+.js-scroll {
+opacity: 0;
+transition: opacity 500ms, background-color 2000ms ease-out;
+}
+
+.js-scroll.scrolled {
+opacity: 1;
+}
+
+.scrolled.fade-in-bottom {
+animation: fade-in-bottom 1s ease-in-out both;
+}
+
+
+@keyframes fade-in-bottom {
+0% {
+-webkit-transform: translateY(50px);
+transform: translateY(50px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateY(0);
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+
+.whybackground {
+
+   background-color: rgb(77, 107, 153);
+   width: 100%;
+   height: 600px;
+
+}
+.whybackground:hover {
+    background-color: #555555;
+    -webkit-transition: background-color 2000ms ease-out;
+   -moz-transition: background-color 2000ms ease-out;
+   -o-transition: background-color 2000ms ease-out;
+   transition: background-color 2000ms ease-out;
+}
+
+.scrolled.fade-in {
+animation: fade-in 1s ease-in-out both;
+}
+.scrolled.slide-left {
+   animation: slide-in-left 1s ease-in-out both;
+}
+   @keyframes slide-in-left {
+   0% {
+       -webkit-transform: translateX(-100px);
+       transform: translateX(-100px);
+       opacity: 0;
+   }
+   100% {
+       -webkit-transform: translateX(0);
+       transform: translateX(0);
+       opacity: 1;
+   }
+   }
+   @keyframes fade-in {
+   0% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 1;
+   }
+   }
+
+   .amenbackground {
+       width: 100%;
+       height: 100px;
+       background-color: rgb(77, 107, 153);
+       transition: background-color 2000ms ease-out;
+       
+       
+
+   }
+
+   .amenbackground:hover {
+       background-color: #555555;
+   }
+  
+   .amencontent {
+       width: 100%;
+       height: 400px;
+       background-color: #555555;
+       border: 1px solid black;
+
+   }
+
+
+   .nomarginright {
+       margin-right: 0;
+   }
+
+   .amencard {
+       display: inline-block;
+       width: 200px;
+       height: 160px;
+       margin-right: 0px;
+       margin-left: 125px;
+       color: white;
+       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+       font-weight: 200;
+       font-size: 18px;
+       text-align: center;
+       border-radius: 10px;
+       transition: background-color 1000ms ease-out;
+       
+   
+   }
+   .amencard:hover {
+       background-color: rgb(77, 107, 153);
+   
+   }
+
+
+   .smalloverlay {
+       height: 100px;
+       width: 100%;
+       
+      
+   }
+
+   .inquiretext {
+       border: 1px solid #555555;
+       width: 300px;
+       height: 30px;
+       margin-top: 67px;
+       border-radius: 7px;
+       padding-left: 5px;
+       display: inline-block;
+      
+       
+   }
+
+   #inquirefont {
+       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+   }
+#cardya {
+   
+   width: 500px;
+   height: 800px;
+   display: inline-block;
+   margin-top: 100px;
+   
+}
+
+.cardya {
+       
+       width: 500px;
+       height: 800px;
+       display: inline-block;
+       margin-right: 0px;
+       
+   }
+   .content {
+
+   margin: 0px 0px 0px 200px;
+   width: 1200px;
+   height: 800px;
+
+   }
+
+   .footerbackground {
+       background-color: #333333;
+       width: 100%;
+       height: 350px;
+   }
+
+   .quicklinks {
+    position: absolute;
+    margin: 30px 0px 0px 900px;
+    font-weight: 200;
+    font-size: 16px;
+    color: lightgray;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    display:inline-block;
+    
+   }
+   
+
+   .paddingquick {
+       padding-top: 30px;
+       
+
+   }
+
+   .paddingquick:hover {
+       color: white;
+       cursor: pointer;
+   }
+
+   .mydesign {
+       color: white;
+
+   }
+
+   .mydesign:hover{
+
+       color: turquoise;
+   }
+
+   ::placeholder {
+
+    padding-bottom: 70px;
+   }
+
+   .servicebckgrnd {
+        width: 720px; height:400px;
+        background-image: url(https://lh3.googleusercontent.com/sS_hZQgFASPKXTCJzIzg7aKojU6kfJvV6ovqkMbdaV0dIQVIKTB7ikY61sWTtjqwQ-kHiue5_ffYnTmw00lCR2_DtO5m3_J4Eij2nykwE5DzVbNXZBYQV1tRMLpLcLrx6odK1hJR5O2_5GcVCiC58c5_b6lJ-YOmC9C7h7xeoVSedOlZrKNAHfeeW9rETx9Y4PPViya8k8XHA1_SjzhQHkrvlz_rrmsri1nlCEg4lFuHMAW7yvsyO62jeBizmRnrdyk0dtEaRKGjVOyiMVKOToUclcAbatC_j9tAv_zcm_vY7AwQmAB2RqTpkXZlXax5Y671SAQFxP-FJdCu_9x1XnZXHoUW57eTGKN8XohALXWKBoKAK3tJvR3jWcl4MwRqgYzN_vYZRZx5wfyR4KzIUAbtL_M5nYxe138tXwGv-HXl7JyEtpLHrIf551zvjsWiC-mybYnEQpRMCH3Xiw4D0lHGE5ScQ7YvI9P1Ky28ApiHG_asVd8UkbxL1zQS-zbQaIfXaeVUnVI0f8MIM5mxNs-Zb3JdYkUgsoQjHKaP4FLM8YlYQJBXooxGl1H4PLvn7XpgDBTM1JTZxXLRodm4ukGvCet8pGLvGLT1OLgJMkLWIOQ8-Lr-_ScQJnrmrsPQOVPJGSAf0wpqVn_-UexK77NvnuzqXxqIut3Dbgpvphrw_UjGvg7mp3u1ooz_yROj-BjLugHKoaC6NRZF3wMrE54z=w720-h420-no?authuser=0);
+        
+   }
+
+   .twenty {
+
+    width:720px; height: 400px;
+    background-image: url(https://lh3.googleusercontent.com/C86s1rDYz-h3EDfH62u7KMBj27fsvWG9J_ywnWKvQq_GtRwrTcNRzwMyQbKAWX15_vL-BTLJKpBlu-XFtNYIrIozLcjSOovOo_3LL788xNQYgdBC8oKtZWCJCdSOUwiCr8ub-dK1EBC-_XwX_ofuQoDJaXKAQhDevDmmYWb4RzIwGGmLChIUWUTFPKxEi6ttRK8GcemxmDWANyPnDrXDrmh2ef5YlI-DIpU5s93JDeWG8_r2lhYOIytUyehuAWJl-yMeiB5Cl3AjzE_PjUf75EA3z5178_cGZw5YH-jX7P6k6ycRGnFHHmITraeVYMrI8gIGNhY_awOXCyABMJ0JpK1IsB3J5WPebbQxb4skhLrq9wleL2oIf362i27yixunfbOdpmNt9Ns3RZTC2LDRNYERUQ5lZxXeUPMVdn_ZQdTK4H4qs0Bi_4r89uGI47a9PdcfVkDFaha62hk1nWutFYEhpk9WaZv4FEzZsg_W-Kph3DWJii-8O3iqHyuu9nltH9l3h4Kmkfj1zbXLOGUiKneCXtiheHcgptxkXO0AgiGVNuwEggrY0r3bydFV4r940F0UeQf15RFbFxUduqaPEGLlCsWSB6TE1tayKbmT_NfFXvqZKI-XT82U8uW58YwFVdsR_mF3RXdl_xs7OWhmevwCP3vV2Jtw_IHHLgNUN9-mIHXsj7V3bgkiuSyecStiPweIMfBDb1fB_V0JoKcYg3sm=w720-h400-no?authuser=0);
+   }
+
+   .dog {
+
+    width:720px; height: 400px;
+    background-image: url(https://lh3.googleusercontent.com/nasZVH-bhNe-_zdvY1TRCMw2Hgo0xsWGlFGYQ1izmnWrWpnQNtG8WBg3LsQRW3PCRg9ApIlW5XO2lsAI6rymRB8_Sq6WyMc7r422Cqio5K7QRsy6CSBb5lLJneLAjinyYRT8kShc_0U13NtC0DC6Tz7McAZQWfPRjy841Us1d1JVgsfByvmXsriGBZ-RCL3BlqWxIlznQqZK0RBuz3s4o-wIX-P0gdQbcnKA0LcdhdiFQcqkKnBXpr-HFXllJlul9UzQNMDOnp7ZJrU9KeNOOHqJHAAKMHKHbcqqXVn6bE3rJfpePOhZApfs0uTNqecGOjhMxmlv0CvSKJd1g_XwpBR5eY836iZsr-EB1QOWG6IpC9zNi1m8-UyMsnGg1EaNdKdRmcVIGZidPNzsmP2TWVJdGr0eoRgdH7ypbe1uVFFwqBkJ52A0ML3QnzD989GmwBYRwh1bZOs9vb1r9EUlPOY2KWD81JOL0IN9x65shkzP_VNNAKEGNXC57DiymdIHAdX48pXdDc1jRalF0zmyZLjk004cf207A3QQV-A19W7sIIPDUwqPHnOLuuTccVr51o2CBCnSrkgnwBOrqx18z-OF8gOh5TbXNgb6muVH1r5iz29mqrzDPdjjcA2nq5Wep450duZTuDGtpiDXDmp3qdCMyA2Ut1iEQ44tSeyzQN1xi-kdQLHOU4Tz3r5ZaWhoMny_IywZoMBumzuO3WvrRu7c=w720-h400-no?authuser=0);
+   }
+   .car {
+
+    width:720px; height: 400px;
+    background-image: url(https://lh3.googleusercontent.com/zfIcvLD7sAaFXLiaeS454O5rWFqwlmFg0HnooVETvK7DZLoV15iaISK7fC253uOwI32bkWo1zpQDGgQfhqZXBkRCXcjR4dbXk9271r7C0xKKgI_ge4uPb1Hcm9e6NnWhGC2qIM2IsCK3IqpJb4HoaV9rDh4YEXbVGT7tIcaPhF4_ahXWPUrhqM2nFVcV7YrJTei1A49Vg0KC1MXVUWcyjizFvPq_74IcYLDgf8pbLuUoaYklMG-Z7kqP8EO7s4fLxhK_RgAXOL6XnHBz1rgg-8v__50a3WmD2AI7GxVw15_cNhH91McAl1R62XDI4g93ntP62hlq1XUgZGYa8JlzJGUXjRb2orNMgwqiPGh8vVfjnl38D2kPcUo3na3FBXnaaDUHdyOgaUzeZczeBawYRqAMMJgHbJhs3Ir25al3trBHR2vdUbxYrzDkWKdkIwSLG5zOvvYUBCXrUb-204dwyR8Cl2Mc_4SRbavLNiZKg9kivKzZJ-g_IW5CWcbf-xqq5ghJkwbsmxg0AmOcHAD8xA1TV_F3_Eg62aaTQQ2GRt0WuAeZD4E6RJEAgE5Yw_uLr72f-9IkVNjRnsBNZPvh-OxX7HXAeBcV1FA-5djEpfHp-c5R7PZ3aSDw6W-W0Hm2QSFXQcjGOPOWGRCEOAqgeg37kBg26yr71EppMOmP3XDxhbNEKXvJse1tZ3VndULYZkAj3PzGxEBNZqq1UWkbe83I=w720-h400-no?authuser=0);
+   }
+   .pill {
+
+    width:720px; height: 400px;
+    background-image: url(https://lh3.googleusercontent.com/f5CBN4TkqyyzSnZT7srROOGMQcQX46kZYh8PA9T0QGKc4D_LAgshunKPfLgeYFr7XEy05opptBqOAqVOxDVIotsQdy24X2BPNcMwC6ShikI7z3cnm8tgAEaIGPz34oCYg0GkpBnNz9z9isYgYdoaQms9UgBiwg_AMzQTp8kFcylr0O75hAGgUVaVBr9t9ZoVJArZuPBs1h2cCFn88oDHEgef4lmrEAIO0ypN77eKRA3qd7sGY3-vI9C_UY0GG8-FsmtEyA7b613__rxL2lvMRSa27zsJzO11O6LvCHCie30Zu1ALLEUli6KlrYGOkeychtFQww-1mltnyeZMrh3JLPpPXX1L0_rMtCfeJjAsrwIzFCNNdpO_HxRZwaQP_qWexPpMo3g6Wk7-6sZr1yhcM5wZmGBvMwO7Pf4kF0WxPwuX3JY2tn-8Qt53YetJAU_yclP9hjN2pJJCyvgD__vR5VJltV_ULjGQSOPEz0_BT2iHYU3djgFOHHKX-NNJwBeF7yL2eYsd8JaP_hDuDwfJ8vm89_6wkfturF0tVAOFReiekqBp6JI13R03SxoJvXk8V-exWiNu7dVtt3k6MrWR5aLZszoijVIS9CQFfhZKEwOGkzNCfUQJ0M7ZkLEFPxuo9Vf4RbiQBg1pcUZmCnWng6345yG9X6tC73dv41iOFvDbtF89oqEm6U2KWQXYJnFJK2O9VASeHtGuMse_x-nq3kML=w720-h400-no?authuser=0);
+   }
+   .laundry {
+
+    width:720px; height: 400px;
+    background-image: url(https://lh3.googleusercontent.com/W8BeqPYGyULI7dWO2ahuvyoGlbWWub_cd7RCeS9iabJTJ7sKyhFrmkjkpkHuJQmfbJqxSN34qfU_u8ke2slUYcpNn175VdocPCFUBrl6nq4SqBJGlWC4zsNOevevxycplBM7j0y3KLqZUnss1ET8cl7WB4sifs-2XnlmkZHHOivW5OyVKLd_6nxAmltq-XxBti6NrJ3G8ABdOapBFPyGD1mPFPD5HUtSfVL1HJHGKCeXAeZnOJ1KJQGNwEIh6AhcG5h628UiO4jJb_P0n-GKxDA6n3AThIneUUf4haZb13z6mBBWM-VasBB0p28X-qLMvy4-u3luM4vseIiqSxGduFuOymF3rzigKXqyUz7p0T3dJA5_lAhnxMY9_dtV3cqC6GvAdQiOhedU8QGYGvJQ2t0xEqDOGOSbJ0Tg-y115VGJgj7DfwQa3LaRtKihz-eMTnqWlGIkP9yNrQUHlQfibyoVkD5WDVKg3tB72TVhQ1qew3BQkFPJiEZcM58cPvAaCXjj2dlYLR2E7hOznktAVw70eDN2f4v0PgHTZxltKD4GFSBD39AnQjOupVV2MrFgabdPXtuS7X1pw8fzum_Ondq_IXtN3f2s4Cj65bj8XQB8oxXMJbq-bsH6B2R28NSJDJj6rsTvYmB2OgRN9BQyJ5KDRl4kR4A8-BxuGmkPjpN0rADBi94mHXTTcbrNceARj22DE_49ZOcQ0rgW2Ciqtf0N=w720-h400-no?authuser=0);
+   }
+   .food {
+
+    width:720px; height: 400px;
+    background-image: url(https://lh3.googleusercontent.com/gXSq3Mhlm7z3_cHDUTY_3ekrU8FvvoxBGHeSMitlBXESiIUQVW4ZTpkg1jXhZv_io_7DLRLXmzjgcC1aeZCv5M7csrTpJ5VaiHVLIFY2Pvx09icwvQZlUnHQpHMYDwmpn2Cv4f3KHg-buVYuF3ZFD5pPotc1S_3u7gmZeFuKA2HBf9CrYd3V-QSdLunJfXM2ZKo6ZN4iNBFxX4oQdcCmW9MAQZd_2iBtEpS3MH6lOSrBCmX561RllrvfGPvNoWxaK9StjsUoJMqwZlOlENi_3NYYZVm0rt8_5u45z11kRzt1yvQV6p1p5AlG9rl5MXcNwGhOGAg0-24yntG6H4rxFAQHXcpd0xyKacf0g_LWB43Z1wOkOFmYlzqMdLCD85MlE3tvnBKLk7UsHElUzWwv-tiiOpfijpgob1Tn6p3JlqRqNJ5JWP-TajPbe_ou9yFVk2XA7pSeRpHWuNY97pirbkjEL-f1Gbsv9v17owcQBRWpsxjrEOgwXZhao-gpc3o4QyIyuL-S1zQS-FHig9k-tjcxF1JKY2OifrhvW0d4_t8p1ty2DlgGwlLG9sCnhK3nEs6BH1WVhn3C0XDNe0C8iUFmzzCceL28Ry_Xwqu6FB9MK-hpW9y5g8oVfbZfQ7ImVSBV3gbdVNdtwBK_t6pocow3XRFq2bRIbio8mgUf1c1a13SDq3BGohX1yEXVWh1yZt29m5hkq2M218u_w1r0o-PE=w720-h400-no?authuser=0);
+   }
+   .activity {
+
+    width:720px; height: 400px;
+    background-image: url(https://lh3.googleusercontent.com/pWrl8TTKEpLduMqcszoQRa6ji4HutVzqIWdFntcc47TBC7UjevI_HhW537JyAU64b_phUT1ep_9KqJHwa5NZuoOdcb2C19r-R6eRv_NQu8nq-ylrzECoNESkqnf5JypnDMDliN8eiS9-7wzsNXpc-Dd88KkqMxs9LpSVWy5Xy4R_w6OFJUdeGxLzjuYSpMcs0oyuIM3n_lX4VjMrL5J_O88zgnG8mt6TUWmVsA-GzL8_oxjC6WqDPyvk6SQevEP3GEPJ3HiDREzomA705MPclHeZDBRHXnp25EF02PJ3NODdC0DzG9cb2G2EENQ27L7TKuE_bOFtThrP0pFYQa9a8lut18s8xyuWYlCsp9oL73979708nqrNZI5w1jWU-BA4eDrT1WDbCri3WK8viXDyZTUPanb6wW1PH3RQeRpfzdUG6hvJd3-2VLAeDWL5mCcoQSkqVCoe9xqyQFm5S9LJD_8WLbgUl75y74u6WVsYV_RjEHDTSJ56JbRBAWB69p1Xc3gUHwVs09CO9hnA3RrvAwc0SWL7ByZl_MNMOipMEVBgV24CarqnKNsJQMgOlCexghRw9Vuj_GFnK8cx7KsO-GcRVJzSkSaP7Rgo1PaH50BVIVAFAWY477vJctXy8x5jt6cb4kp7BMx9KvdwZEylhclzuUVzP26IZz_KbPMBGguvZ1kWBIgEDKe2xDz8P4o5NE7VFkkBzGNF0FVu4YAPbcF6=w720-h400-no?authuser=0);
+   }
+
+   .smallsec {
+    margin: 100px 0px 0px 150px;
+    border: 1px solid turquoise;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+   }
+
+   .extrabackground {
+
+    background-color: rgb(77, 107, 153); 
+    height: 700px;
+    transition: background-color 2000ms ease-out;
+   }
+
+   .extrabackground:hover {
+    background-color: #555555;
+   }
